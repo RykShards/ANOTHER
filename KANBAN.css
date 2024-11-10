@@ -1,0 +1,53 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 90vw; /*VIEWPORT WIDTH*/
+    height: 90vh; /*VIEWPORT HEIGHT*/
+}
+
+#KANBANBOARD{
+    display: flex;
+    gap: 14px;
+    padding: 48px;
+    width: 100%;
+    height: 100%;
+}
+
+.swimlane{
+    border: solid rgb(109, 9, 9);
+    border-radius:4px;
+    padding:10px;
+    flex-basis: 1;
+    flex-shrink: 0;
+    flex-grow:1;
+} 
+
+.card{
+    padding: 14px;
+    border-radius: 4px;
+    color:white;
+    .Todo & {
+        background-color: rgb(0, 0, 0);
+        box-shadow: rgb(54, 54, 54)2px 2px, rgb(160, 160, 160)5px 5px;
+    }
+    .inProgress & {
+        background-color: rgb(128, 128, 128);
+        box-shadow: rgb(154, 154, 154)2px 2px, rgb(193, 193, 193)5px 5px;
+    }
+    .Done & {
+        background-color: rgb(192, 192, 192);
+        box-shadow: rgb(223, 223, 223)2px 2px, rgb(245, 245, 245)5px 5px;
+    }
+}
+
+.card:hover{
+    .Todo & {
+        background-color: rgb(43, 43, 43);
+    }
+    .inProgress & {
+        background-color: rgb(149, 149, 149);
+    }
+    .Done & {
+        background-color: rgb(209, 209, 209);
+    }
+}
