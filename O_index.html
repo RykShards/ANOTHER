@@ -7,32 +7,31 @@
     <link rel = "stylesheet" href="KANBAN.css">
 </head>
 <body>
-    <!-- <main id ="EXTRA">
-        <section class = "EXTRA">
-            <div class = "card">
-                EXTRA
-            </div>  
-        </section>
-    </main> -->
-
+        <h1 contenteditable="true" class = 'title' id = 'box'>
+            ASSIGNMENTS
+        </h1>
     
     <main id ="KANBANBOARD">
         <section class = "swimlane Todo">
-            <div class = "card">
+            <div class = "card" contenteditable="true">
                 TO DO 
             </div>  
         </section>
         <section class = "swimlane inProgress">
-            <div class = "card">
+            <div class = "card" contenteditable="true">
                 IN PROGRESS
             </div>  
         </section>
         <section class = "swimlane Done">
-            <div class = "card">
+            <div class = "card" contenteditable="true" >
                 DONE
             </div>  
         </section>
     </main>
+    <section class = "extras">
+        <button class= 'btn' id = "btn">ADD</button>
+        <input  type="text" id = "input" class = "userinput" autocomplete="off">
+    </section>
     <script src = "O_script.js"></script>
 </body>
 </html>
